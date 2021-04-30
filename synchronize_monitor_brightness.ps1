@@ -6,7 +6,7 @@ $brightnessCorrectionInternalToExternalMaps = @{
 		30 = 53;
 		40 = 55;
 		50 = 60;
-    60 = 65;
+		60 = 65;
 }
 
 # Variable to detect brightness changes
@@ -39,7 +39,7 @@ while ($true) {
 
 		# Verbose output for user
 		Write-Host "Internal screen Brightness $($laptopMonitorCurrentBrightness), External screen Brightness: $($externalDellMonitorBrightness), Contrast: $($externalDellMonitorContrast)"
-    & "C:\Program Files (x86)\Dell\Dell Display Manager\ddm.exe" /SetBrightnessLevel $externalDellMonitorBrightness /SetContrastLevel $externalDellMonitorContrast
+		& "C:\Program Files (x86)\Dell\Dell Display Manager\ddm.exe" /SetBrightnessLevel $externalDellMonitorBrightness /SetContrastLevel $externalDellMonitorContrast
 	}
 	else {
 		Start-Sleep -Seconds 1
